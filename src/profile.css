@@ -1,0 +1,106 @@
+/* Profile Container */
+#profile {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    width: 80%;
+    max-width: 700px;
+    margin: 50px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+#profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile Image */
+#profile1 {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Rotate Effect on Hover */
+#profile1:hover {
+    transform: rotate(360deg);
+}
+
+#heading {
+    font-size: 2rem; /* Small but strong presence */
+    font-weight: 900; /* Extra bold for emphasis */
+    font-family: 'Poppins', sans-serif; /* Clean & modern font */
+    color: #333; /* Dark gray for a sleek look */
+    text-align: center;
+    text-transform: uppercase; /* Gives a formal look */
+    letter-spacing: 2px; /* Enhances readability */
+    padding: 5px;
+    border-bottom: 3px solid #0073e6; /* Professional blue underline */
+    display: inline-block;
+    color:white
+}
+
+/* Social Media Links */
+#linkedin, #codingp {
+    margin-top: 10px;
+}
+
+#linkedin a, #links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+    background: linear-gradient(135deg, #0077b5, #004471); /* LinkedIn Blue */
+}
+
+#linkedin a:hover {
+    background: linear-gradient(135deg, #004471, #00213d);
+    transform: scale(1.1);
+}
+
+/* Coding Profiles */
+#links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#links a {
+    background: linear-gradient(135deg, #4a90e2, #1a4d8f);
+    border-radius: 8px;
+    padding: 8px 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+#links a:hover {
+    background: linear-gradient(135deg, #1a4d8f, #0d2c52);
+    transform: scale(1.1);
+}
+#contact-info {
+    font-size: 1rem;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#contact-info a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact-info a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,102 @@
+/* Main Container */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Heading */
+#cert {
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Certification Box Layout */
+.cert-box {
+    position: relative;
+    background: linear-gradient(135deg, #5a5a5a, #1c1c1c);
+    padding: 30px;
+    border-radius: 50px; /* Curved box effect */
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    width: 350px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Neon Glow Effect */
+.cert-box::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #ff7675, #74b9ff, #00cec9);
+    z-index: -1;
+    filter: blur(15px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.cert-box:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+.cert-box:hover::before {
+    opacity: 1;
+}
+
+/* Certification Images */
+.cert-img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Image */
+.cert-box:hover .cert-img {
+    transform: rotateY(360deg);
+}
+
+/* Certification Titles */
+h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #container {
+        width: 95%;
+    }
+
+    .cert-box {
+        width: 90%;
+    }
+
+    .cert-img {
+        width: 100px;
+        height: 100px;
+    }
+}
