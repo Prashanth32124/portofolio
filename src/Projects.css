@@ -1,20 +1,84 @@
-.tech-tags {
-  margin-top: 10px;
+#projects {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
 }
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #004080;
+  letter-spacing: 1.5px;
+}
+
+.project-card {
+  background: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 64, 128, 0.1);
+  padding: 30px 25px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 64, 128, 0.2);
+  transform: translateY(-5px);
+}
+
+.project-card h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+.project-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: #444;
+}
+
+.project-card ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 0;
+  color: #555;
+}
+
+.project-card ul li a {
+  color: #0073e6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-card ul li a:hover {
+  text-decoration: underline;
+  color: #004080;
+}
+
+.tech-tags {
+  margin-top: 20px;
+}
+
 .tech-tag {
   display: inline-block;
-  background-color: #eee;
-  color: #333;
-  padding: 5px 10px;
-  margin-right: 8px;
-  border-radius: 15px;
-  font-size: 0.85rem;
+  background: #0073e6;
+  color: white;
+  font-weight: 600;
+  padding: 7px 15px;
+  margin: 6px 8px 6px 0;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 3px 8px rgba(0, 115, 230, 0.4);
+  transition: background 0.3s ease;
 }
-.project-card {
-  margin-bottom: 30px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+
+.tech-tag:hover {
+  background: #005bb5;
+  cursor: default;
 }
