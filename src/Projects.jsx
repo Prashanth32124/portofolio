@@ -3,30 +3,42 @@ import './Projects.css';
 
 const projectsData = [
   {
-    title: 'E-Commerce Website',
-    description: 'Designed and developed a dynamic e-commerce website using JavaScript, HTML, CSS, and Firebase Realtime Database.',
+    title: 'CampusKart',
+    description: 'A platform to help students explore B.Tech colleges with entrance exam info and useful resources.',
     details: [
-      'Integrated Firebase Realtime Database for real-time user and product data synchronization.',
-      'Implemented Local Storage for persistent cart management across sessions.',
-      'Built responsive UI with JavaScript DOM manipulation and CSS media queries.',
-      'Deployed on Netlify with Firebase integration and multi-factor authentication.',
-      'Improved team collaboration throughout the project lifecycle.'
+      'Built using the MERN stack (MongoDB, Express, React, Node.js).',
+      'Implemented search and filtering features for user-friendly navigation.',
+      'Responsive UI with React and Tailwind CSS.',
+      'College and entrance exam links integrated for easy access.'
     ],
     links: [
-      { label: 'View Project', url: 'https://ecommerce-project-roy.netlify.app' },
-      { label: 'Live Demo on Vercel', url: 'https://ecommerce-eta-rust.vercel.app' }
+      { label: 'Live Site', url: 'https://campus-kartfrontend.vercel.app/' }
     ],
-    tech: ['JavaScript', 'HTML', 'CSS', 'Firebase', 'Netlify']
+    tech: ['React', 'Node.js', 'Express', 'MongoDB']
   },
   {
-    title: 'Campus Kart Project',
-    description: 'Developed a web app using React and MongoDB to help students explore B.Tech colleges with detailed info and entrance exam links.',
+    title: 'iMail',
+    description: 'A full-stack email system with authentication and messaging features.',
     details: [
-      'Built backend APIs with Node.js and Express for efficient college data management.',
-      'Implemented search and filtering features for easy college discovery and smooth user navigation.'
+      'Developed using the MERN stack.',
+      'Custom login system and email validation.',
+      'Messages sent and stored via backend APIs.'
+    ],
+    links: [
+      { label: 'Live Demo', url: 'https://imail.vercel.app' }
+    ],
+    tech: ['React', 'Node.js', 'Express', 'MongoDB']
+  },
+  {
+    title: 'HomeIn',
+    description: 'A shared-home organizer app built with React.js and MongoDB to manage weekly purchase duties.',
+    details: [
+      'Members add items to a shared cart; the weekly buyer marks them as bought or notifies if unavailable.',
+      'Built using React.js and MongoDB.',
+      'Deployment: Not yet deployed.'
     ],
     links: [],
-    tech: ['React', 'Node.js', 'Express', 'MongoDB']
+    tech: ['React', 'MongoDB']
   }
 ];
 
